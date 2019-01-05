@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Group ID="XX.AGNT">
+  <HEAD>
+    <!--记录标识,H-->
+    <FIELD Format="X(1)" ID="RecordType">H</FIELD>
+    <!--顺序号-->
+    <FIELD Format="9(12)" ID="SeqNum">1</FIELD>
+    <!--机构过账标识,1-->
+    <FIELD Format="9(1)" ID="Jggzbs">1</FIELD>
+    <!--源文件名称-->
+    <FIELD Format="X(50)" ID="FileName" />
+    <!--交易机构号-->
+    <FIELD Format="9(5)" ID="BranchNum" />
+    <!--币种,CNY-->
+    <FIELD Format="X(3)" ID="Currency">CNY</FIELD>
+    <!--合计笔数-->
+    <FIELD Format="9(12)" ID="TotalNumber" />
+    <!--合计金额-->
+    <FIELD Format="9(14)V9(3)" ID="TotalMoney" />
+    <!--金额符号位,+-->
+    <FIELD Format="X(1)" ID="MoneySign">+</FIELD>
+    <!--渠道号,T-->
+    <FIELD Format="X(1)" ID="ChannelNum">T</FIELD>
+    <!--交易柜员号,SCS虚拟柜员号9881900-->
+    <FIELD Format="9(7)" ID="TranTellerNum">9881900</FIELD>
+    <!--交易终端号,000-->
+    <FIELD Format="9(3)" ID="TranTerminalNum">000</FIELD>
+    <!--单位签约号-->
+    <FIELD Format="X(10)" ID="SignUpNum">0</FIELD>
+    <!--数据批次号,001-->
+    <FIELD Format="9(3)" ID="BatchNum">001</FIELD>
+    <!--记帐日期,必须是当日日期，即失败重传也发,也是当日日期,YYYYMMDD-->
+    <FIELD Format="X(8)" ID="EffectTime" />
+    <!--文件处理类型,AGNT-->
+    <FIELD Format="X(4)" ID="FileType">AGNT</FIELD>
+    <!--成功笔数-->
+    <FIELD Format="9(12)" ID="SuccessfulNumber">0</FIELD>
+    <!--成功金额-->
+    <FIELD Format="9(14)V9(3)" ID="SuccessfulMoney">0</FIELD>
+    <!--金额符号位,+-->
+    <FIELD Format="X(1)" ID="SuccessfulMoneySign">+</FIELD>
+    <!--失败笔数-->
+    <FIELD Format="9(12)" ID="FailedAmount">0</FIELD>
+    <!--失败金额-->
+    <FIELD Format="9(14)V9(3)" ID="FailedMoney">0</FIELD>
+    <!--金额符号位,+-->
+    <FIELD Format="X(1)" ID="FailedMoneySign">+</FIELD>
+    <!--文件返回信息码-->
+    <FIELD Format="X(4)" ID="ResultCode" />
+    <!--文件返回信息，E码，减去两位长度-->
+    <FIELD Format="X(28)" ID="ResultInfo"/>
+    <!--部分扣款标识-->
+    <FIELD Format="X(1)" ID="PartDeductionId">0</FIELD>
+    <!--Filler-->
+    <FIELD Format="X(223)" ID="Filler" />
+  </HEAD>
+  <BODY>
+    <!--记录标识,D-->
+    <FIELD Format="X(1)" ID="RecordType">D</FIELD>
+    <!--顺序号-->
+    <FIELD Format="9(12)" ID="SeqNum" />
+    <!--交易机构号-->
+    <FIELD Format="9(5)" ID="BranchNum" />
+    <!--客户号-->
+    <FIELD Format="9(10)" ID="CustNum" />
+    <!--转出新帐号-->
+    <FIELD Format="9(17)" ID="OutNewAccount" />
+    <!--转出旧帐号-->
+    <FIELD Format="X(25)" ID="OutOldAccount" />
+    <!--转出卡号-->
+    <FIELD Format="X(19)" ID="OutCardNum" />
+    <!--子账户类别号-->
+    <FIELD Format="X(4)" ID="OutChildAccountType">CNY0</FIELD>
+    <!--Filler-->
+    <FIELD Format="X(1)" ID="Filler" />
+    <!--转入新帐号-->
+    <FIELD Format="9(17)" ID="InNewAccount" />
+    <!--转入旧帐号-->
+    <FIELD Format="X(25)" ID="InOldAccount" />
+    <!--转入卡号-->
+    <FIELD Format="X(19)" ID="InCardNum" />
+    <!--子账户类别号-->
+    <FIELD Format="X(4)" ID="InChildAccountType" />
+    <!--产品类别,5506-->
+    <FIELD Format="X(4)" ID="ProductType">5506</FIELD>
+    <!--产品子类,0610-->
+    <FIELD Format="X(4)" ID="ChildProductType">0610</FIELD>
+    <!--金额-->
+    <FIELD Format="9(14)V9(3)" ID="Amount" />
+    <!--金额符号位,+-->
+    <FIELD Format="X(1)" ID="MoneySign">+</FIELD>
+    <!--PromoCode,卡,al,Etoken，bh-->
+    <FIELD Format="X(2)" ID="PromoCode" />
+    <!--证件类型-->
+    <FIELD Format="9(2)" ID="IDType" />
+    <!--证件号码-->
+    <FIELD Format="X(32)" ID="IDCard" />
+    <!--校验种类-->
+    <FIELD Format="X(1)" ID="CheckType">0</FIELD>
+    <!--校验方向-->
+    <FIELD Format="X(1)" ID="CheckDirection">0</FIELD>
+    <!--交易码,1050-->
+    <FIELD Format="9(6)" ID="TranNum">1050</FIELD>
+    <!--主机参考号-->
+    <FIELD Format="X(9)" ID="HostSeqNum" />
+    <!--主机记帐日期-->
+    <FIELD Format="X(8)" ID="HostEffectTime" />
+    <!--文件返回信息码-->
+    <FIELD Format="X(4)" ID="ResultCode" />
+    <!--文件返回信息, E码，减去两位长度-->
+    <FIELD Format="X(28)" ID="ResultInfo"/>
+    <!--账户余额-->
+    <FIELD Format="9(14)V9(3)" ID="AccountBalance">0</FIELD>
+    <!--账户余额符号位-->
+    <FIELD Format="X(1)" ID="AccountBalanceSign" />
+    <!--Filler2-->
+    <FIELD Format="X(2)" ID="Filler2" />
+    <!--账户名，E码，减去两位长度-->-->
+    <FIELD Format="X(56)" ID="CustName"/>
+    <!--摘要，E码，减去两位长度-->-->
+    <FIELD Format="X(48)" ID="Summary"/>
+    <!--冗余域,我们把这个列传入表的主键ID，然后通过这个字段更新IsProcessed字段-->
+    <FIELD Format="X(48)" ID="ID" />
+  </BODY>
+</Group>

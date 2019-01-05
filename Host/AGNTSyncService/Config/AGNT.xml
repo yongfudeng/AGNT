@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<AGNT>
+  <EngineType>BOC.SynchronousService.Framework.Runtime.RealEngine,Runtime</EngineType>
+  <AdapterType>BOC.SynchronousService.Adapter.FtpAdapter,FtpAdapter</AdapterType>
+
+  <UnitSettings>
+    <Unit>
+      <FileType>AGNT</FileType>
+      <UnitType>BOC.SynchronousService.Unit.PlkfUnit,PlkfUnit</UnitType>
+    </Unit>
+  </UnitSettings>
+
+  <ScheduleSettings>
+    <!--触发类型：SimpleTrigger和CronTriggers,SimpleTrigger按照时间间隔，CronTriggers可以按照计划任务的复杂配置
+    ,参考:http://www.cnblogs.com/sunjie9606/archive/2012/03/15/2397626.html-->
+    <TriggerType>CronTriggers</TriggerType>
+    每天21点开始执行，一天执行一次
+    <ConfigDetail>0 0 21 * * ?</ConfigDetail>
+    <!--测试条件下，配置按照每60分钟执行一次--><!--
+    <TriggerType>SimpleTrigger</TriggerType>
+    --><!--当TriggerType为SimpleTrigger时，ConfigDetail的配置就是每隔多少分钟执行一次--><!--
+    <ConfigDetail>60</ConfigDetail>-->
+  </ScheduleSettings>
+  <AdapterSettings>
+    <RemoteAddress>22.188.31.159</RemoteAddress>
+    <RemotePort>21</RemotePort>
+    <Username>scsftp</Username>
+    <Password>scsftp</Password>
+  </AdapterSettings>
+
+  <FolderSettings>
+    <RemoteDownloadDirectory>/bancftp/US/00000/DOWNLOAD</RemoteDownloadDirectory>
+    <LocalDownloadDirectory>Temp\DownLoad</LocalDownloadDirectory>
+    <RemoteUploadDirectory>/bancftp/US/00000/UPLOAD</RemoteUploadDirectory>
+    <LocalUploadDirectory>Temp\Upload</LocalUploadDirectory>
+    <LocalTempFilesDirectory>Temp\TempFiles</LocalTempFilesDirectory>
+  </FolderSettings>
+
+  <DataSettings>
+    <Path NodeID="AGNT">Data Source=.\sql14;Initial Catalog=WorkflowDB;Persist Security Info=True;User ID=sa;Password=pass01!</Path>
+  </DataSettings>
+  <FileSettings>
+    <File Name="AGNT" SchemaName="AGNT.xml" SchemaDirectory="Schema" SystemCode="US" />
+  </FileSettings>
+  <AssemblySettings>
+    <Assembly Name="BLAssembler" Type="BOC.SynchronousService.Assembler.BancsLinkAssembler,BancsLinkAssembler" Encoding="gb2312" />
+  </AssemblySettings>
+  <ComponentSettings>
+    <Component FileName="AGNT" AssemblyName="BLAssembler" />
+  </ComponentSettings>
+</AGNT>

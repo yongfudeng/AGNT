@@ -1,0 +1,171 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{133AEAC2-AF39-4217-92D7-1DA5660AC585}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{E40D95CD-5980-4D5E-89EF-0631328F7DCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{416F89B7-64F4-4AC0-BC15-20BD0E197928}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assembler", "Assembler", "{37C697EC-0A4A-4F0E-8D0B-A9E17667E0FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{28BFFA56-3373-48AA-AC01-175CEB8C242B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime", "Framework\Runtime\Runtime.csproj", "{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Message", "Framework\Message\Message.csproj", "{278AA896-E224-4ABC-BA39-D509473FF542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembler", "Framework\Assembler\Assembler.csproj", "{B0F63D6E-026C-4D99-86EF-77366F68174F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Framework\Adapter\Adapter.csproj", "{09123F6B-5B30-4C01-A6D2-9B982A20E439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Framework\Common\Common.csproj", "{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpAdapter", "Adapter\FtpAdapter\FtpAdapter.csproj", "{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancsLinkAssembler", "Assembler\BancsLineAssembler\BancsLinkAssembler.csproj", "{B3973D20-8622-41CC-B629-D3D9F92DA987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Framework\Config\Config.csproj", "{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppConfig", "Config\AppConfig\AppConfig.csproj", "{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGNTSyncService", "Host\AGNTSyncService\AGNTSyncService.csproj", "{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{E0D48E81-0199-4081-93E8-8040A2C2AE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlkfUnit", "Unit\Plkf\PlkfUnit.csproj", "{DD29AC83-2982-4404-91FF-E3C7B906EE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit", "Framework\Unit\Unit\Unit.csproj", "{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278AA896-E224-4ABC-BA39-D509473FF542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278AA896-E224-4ABC-BA39-D509473FF542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278AA896-E224-4ABC-BA39-D509473FF542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278AA896-E224-4ABC-BA39-D509473FF542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F63D6E-026C-4D99-86EF-77366F68174F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F63D6E-026C-4D99-86EF-77366F68174F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F63D6E-026C-4D99-86EF-77366F68174F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F63D6E-026C-4D99-86EF-77366F68174F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09123F6B-5B30-4C01-A6D2-9B982A20E439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09123F6B-5B30-4C01-A6D2-9B982A20E439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09123F6B-5B30-4C01-A6D2-9B982A20E439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09123F6B-5B30-4C01-A6D2-9B982A20E439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3973D20-8622-41CC-B629-D3D9F92DA987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3973D20-8622-41CC-B629-D3D9F92DA987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3973D20-8622-41CC-B629-D3D9F92DA987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3973D20-8622-41CC-B629-D3D9F92DA987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD29AC83-2982-4404-91FF-E3C7B906EE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD29AC83-2982-4404-91FF-E3C7B906EE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD29AC83-2982-4404-91FF-E3C7B906EE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD29AC83-2982-4404-91FF-E3C7B906EE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBDC01F9-BD2A-4DC1-8B2E-946AF628E849} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{278AA896-E224-4ABC-BA39-D509473FF542} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{B0F63D6E-026C-4D99-86EF-77366F68174F} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{09123F6B-5B30-4C01-A6D2-9B982A20E439} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{BE17F6CE-C92B-45AE-ABF1-F92FA8D8ADD6} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{F25094CA-09F0-46FE-87A1-EE9C08CEB8FC} = {416F89B7-64F4-4AC0-BC15-20BD0E197928}
+		{B3973D20-8622-41CC-B629-D3D9F92DA987} = {37C697EC-0A4A-4F0E-8D0B-A9E17667E0FF}
+		{C2B8879A-2D0F-40BB-8C84-FFFAD5026B29} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+		{8736AF1D-D23D-4C6B-8C9D-13C235C6E3ED} = {28BFFA56-3373-48AA-AC01-175CEB8C242B}
+		{B49AD8F5-FCA0-4E5C-9A2E-41A9644D0787} = {E40D95CD-5980-4D5E-89EF-0631328F7DCB}
+		{DD29AC83-2982-4404-91FF-E3C7B906EE28} = {E0D48E81-0199-4081-93E8-8040A2C2AE13}
+		{E93CFBBA-E52F-482A-8E7A-ED3CCFC44810} = {133AEAC2-AF39-4217-92D7-1DA5660AC585}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bocts-tfs-01:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework\\Runtime\\Runtime.csproj
+		SccProjectTopLevelParentUniqueName1 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName1 = Framework/Runtime
+		SccLocalPath1 = Framework\\Runtime
+		SccProjectUniqueName2 = Framework\\Message\\Message.csproj
+		SccProjectTopLevelParentUniqueName2 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName2 = Framework/Message
+		SccLocalPath2 = Framework\\Message
+		SccProjectUniqueName3 = Framework\\Assembler\\Assembler.csproj
+		SccProjectTopLevelParentUniqueName3 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName3 = Framework/Assembler
+		SccLocalPath3 = Framework\\Assembler
+		SccProjectUniqueName4 = Framework\\Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName4 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName4 = Framework/Common
+		SccLocalPath4 = Framework\\Common
+		SccProjectUniqueName5 = Framework\\Config\\Config.csproj
+		SccProjectTopLevelParentUniqueName5 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName5 = Framework/Config
+		SccLocalPath5 = Framework\\Config
+		SccProjectUniqueName6 = Adapter\\FtpAdapter\\FtpAdapter.csproj
+		SccProjectTopLevelParentUniqueName6 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName6 = Adapter/FtpAdapter
+		SccLocalPath6 = Adapter\\FtpAdapter
+		SccProjectUniqueName7 = Assembler\\BancsLineAssembler\\BancsLinkAssembler.csproj
+		SccProjectTopLevelParentUniqueName7 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName7 = Assembler/BancsLineAssembler
+		SccLocalPath7 = Assembler\\BancsLineAssembler
+		SccProjectUniqueName8 = Config\\AppConfig\\AppConfig.csproj
+		SccProjectTopLevelParentUniqueName8 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName8 = Config/AppConfig
+		SccLocalPath8 = Config\\AppConfig
+		SccProjectUniqueName9 = Framework\\Adapter\\Adapter.csproj
+		SccProjectTopLevelParentUniqueName9 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName9 = Framework/Adapter
+		SccLocalPath9 = Framework\\Adapter
+		SccProjectUniqueName10 = Host\\AGNTSyncService\\AGNTSyncService.csproj
+		SccProjectTopLevelParentUniqueName10 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName10 = Host/AGNTSyncService
+		SccLocalPath10 = Host\\AGNTSyncService
+		SccProjectUniqueName11 = Unit\\Plkf\\PlkfUnit.csproj
+		SccProjectTopLevelParentUniqueName11 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName11 = Unit/Plkf
+		SccLocalPath11 = Unit\\Plkf
+		SccProjectUniqueName12 = Framework\\Unit\\Unit\\Unit.csproj
+		SccProjectTopLevelParentUniqueName12 = AGNT\u0020Synchronous\u0020Service.sln
+		SccProjectName12 = Framework/Unit/Unit
+		SccLocalPath12 = Framework\\Unit\\Unit
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TIMS Synchronous Service.vsmdi
+	EndGlobalSection
+EndGlobal
